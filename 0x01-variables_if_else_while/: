@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/**
+ * main -Entry point
+ *
+ *
+ * Retur: Alays 0 (Success)
+ */
+int main(void)
+{
+        int n;
+        int b = n % 10;
+
+        srand(time(0));
+        n = rand() - RAND_MAX / 2;
+        if (b > 5)
+          { printf("the last digit of %dis%d and is greater than 5", n, b); }
+        else if (b == 0)
+	  { printf("the last digit of %dis%d and is Zero", n, b); }
+        else if (b < 6)
+          { printf("the last digit of %dis%d and is less than 6", n, b); }   
+        return (0);
+}

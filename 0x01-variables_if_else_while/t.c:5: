@@ -1,0 +1,23 @@
+st_digit.c:16: WARNING: suspect code indent for conditional statements (8, 14) 
+
+1-last_digit.c:20: ERROR: code indent should use tabs where possible               
+
+1-last_digit.c:20: WARNING: please, no spaces at the start of a line               
+
+1-last_digit.c:20: ERROR: space prohibited after that open parenthesis '('         
+
+1-last_digit.c:24: WARNING: Statements should start on a tabstop                   
+
+1-last_digit.c:24: WARNING: suspect code indent for conditional statements (9, 8)  
+
+1-last_digit.c:25: ERROR: code indent should use tabs where possible               
+
+1-last_digit.c:25: WARNING: please, no spaces at the start of a line               
+
+1-last_digit.c:27: WARNING: Statements should start on a tabstop                   
+
+total: 4 errors, 6 warnings, 29 lines checked 
+
+
+
+
