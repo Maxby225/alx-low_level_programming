@@ -1,20 +1,23 @@
 #include <stdio.h>
-
 /**
- * main - Program entry point
+ *main - Entry point
  *
- *Return:  0 on success. Error code otherwise
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
-	char c;
+	char alpha = 'a';
 
-	for (c = 'a'; c <= 'z'; ++c)
+	while (alpha <= 'z')
 	{
-	if (c != 'q' && c != 'e')
-		putchar(c);
+		if (alpha != 'q' && 'e')
+		{
+			putchar(alpha);
+		}
+		alpha++;
 	}
+	putchar('\n');
+	return (0);
 
-	putchar("\n");
-return (0);
+
 }
