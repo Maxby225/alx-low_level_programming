@@ -1,25 +1,27 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print alphabet lowercase
+ * print_alphabet_x10 - print alphabet
  *
  * Return: Always 0.
-*/
-
+ */
 void print_alphabet_x10(void)
 {
-	char alphabet;
-	int compte = 0;
+	int alphabet;
+	int count;
 
-	while (compte < 10)
+
+	count = 0;
+	while (count < 10)
 	{
-		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
 		{
 			_putchar(alphabet);
-
-			compte++
-			_putchar('n')
 		}
+
+		count++;
+		_putchar('\n');
 	}
+
 
 }
