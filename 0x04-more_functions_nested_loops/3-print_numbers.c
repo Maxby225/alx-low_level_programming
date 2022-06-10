@@ -1,4 +1,4 @@
-#include <mian.h>
+#include <main.h>
 /**
  * print_numbers - checks prints the numbers, from 0 to 9
  * followed a new line
