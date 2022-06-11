@@ -21,14 +21,15 @@ void print_number(int n)
 				{
 				while (copy / 10 != 0)
 				{
-				copy /= 10, size *= 10;	
+				copy /= 10, size *= 10;
 				}
 				while (size > 0)
 				{
 					nth = n / size;
-																							_putchar('0' + nth);
-																							n -= nth * size;																																				size /= 10;																																	
-				}		
+					_putchar('0' + nth);
+					n -= nth * size;
+					size /= 10;
+				}
 			}
 				_putchar('0' + ones);
 
