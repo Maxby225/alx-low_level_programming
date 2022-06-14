@@ -1,25 +1,47 @@
-#include "max.h"
+#include "holberton.h"
+
 /**
- *_strcpy - copies the string pointed to by src
- *@dest: A pointer to a char that will be changed
- *@src: A pointer to a char that will be changed
- *Return: dest
+ * is_numerical - check if it is a digit
+ * @n: Number
+ * Return: If is a number, return 1 else return 0
  */
-
-char *_strcpy(char *dest, char *src)
+int is_numerical(unsigned int n)
 {
+	return (n >= '0' &&  n <= '9');
+}
 
-	int i;
+/**
+ * _atoi - convert a string to an integer
+ * @s: String
+ * Return: Return the num
+ */
+int _atoi(char *s)
+{
+	unsigned int number, i;
+	int sign;
 
-	i = 0;
+	sign = 1;
+	number = 0;
 
-	while (src[i] != '\0')
+
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
+	if (is_numerical(s[i]))
+	{
+	number = (s[i] - 48) + number * 10;
 
-	return (dest);
+	if (s[i + 1] == ' ')
+		break;
+	}
+	else if (s[i] == '-')
+	{
+	sign *= -1;
+	}
+
+	}
+
+	return (number * sign);
+
 
 }
