@@ -1,4 +1,4 @@
-#include <main.h>
+#include <maxby.h>
 /**
  * reset_to_98 - write a function that takes a pointer to an integer
  *
