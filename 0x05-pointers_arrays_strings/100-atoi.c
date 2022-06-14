@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "max.h"
 
 /**
  * is_numerical - check if it is a digit
