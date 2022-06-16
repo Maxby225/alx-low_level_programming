@@ -2,8 +2,8 @@
 
 /**
  *_strcat - concatenates two strings
- *@dest: A pointer to a character that will be changed
- *@src: A pointer to a character that will also be changed
+ *@char_one: A pointer to a character that will be changed
+ *@char_two: A pointer to a character that will also be changed
  *Return: dest
  */
 
