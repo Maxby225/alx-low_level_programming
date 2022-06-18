@@ -1,36 +1,46 @@
 #include <stdio.h>
-
 /**
- * main - Program entry point
+ * main - Entry point
  *
- * Return: 0 success. Error code otherwise
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
+
 {
+	int left;
+	int right;
+	int center;
 
-	int n, e, a;
 
 
-	for (n = 48; n < 58; n++)
+	for (left = 48; left <= 57; left++)
 	{
-		for (n = 49; n < 58; n++)
-        {
-	       	for (a = 50 ; a < 58 ; a++)
-                {
-			if (a > e &&
-                        putchar(e);
-                        putchar(n);
-                        if (n == 57 && e == 56)
-                        {
-                                break;
-                        }
-                        putchar(',');
-                        putchar(' ');
-                }
-                n++;
-        }
-        e++;
-}
-printf("\n");
-return (0);
+		for (center = left + 1; center <= 57; center++)
+		{
+			for (right = center + 1 ; right <= 57; right++)
+
+
+			{
+				putchar(left);
+				putchar (center);
+				putchar (right);
+
+				if  ((left == 55) && (center == left + 1) && (right == center + 1))
+				{
+					break;
+				}
+
+				putchar(',');
+				putchar (' ');
+
+			}
+
+		}
+
+	}
+
+	putchar('\n');
+
+	return (0);
+
 }
